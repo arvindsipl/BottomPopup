@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "0.6.0"
   s.summary      = "BottomPopup provides a popup-like presentation style to any view controller"
 
-  s.homepage     = "https://github.com/ergunemr/BottomPopup"
+  s.homepage     = "https://github.com/arvindsipl/BottomPopup"
   s.screenshots  = "https://media.giphy.com/media/MRWZQ2PUS0NSeCytPx/giphy.gif", "https://media.giphy.com/media/3bzmRH74e9wL6XKNnG/giphy.gif"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '10.0'
 
-  s.source       = { :git => "https://github.com/ergunemr/BottomPopup.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/arvindsipl/BottomPopup.git", :tag => "#{s.version}" }
 
   s.source_files  = "BottomPopup/BottomPopupController/*.{swift}"
 
