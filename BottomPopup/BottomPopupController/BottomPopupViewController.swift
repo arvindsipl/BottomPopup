@@ -11,6 +11,7 @@ import UIKit
 open class BottomPopupViewController: UIViewController, BottomPopupAttributesDelegate {
     private var transitionHandler: BottomPopupTransitionHandler?
     open weak var popupDelegate: BottomPopupDelegate?
+    open var height: CGFloat = 377.0;
     
     // MARK: Initializations
     
@@ -75,9 +76,15 @@ open class BottomPopupViewController: UIViewController, BottomPopupAttributesDel
         self.view.layer.mask = maskLayer
     }
     
+    open var popupHeight: CGFloat {
+           //return BottomPopupConstants.kDefaultHeight
+
+           return height
+       }
+    
     //MARK: BottomPopupAttributesDelegate Variables
     
-    open var popupHeight: CGFloat { return BottomPopupConstants.kDefaultHeight }
+   
     
     open var popupTopCornerRadius: CGFloat { return BottomPopupConstants.kDefaultTopCornerRadius }
     
